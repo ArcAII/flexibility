@@ -5,22 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexibility-2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Include Font Awesome CSS -->
-    <style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
         body {
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif; /* Example font family */
             margin: 0;
             padding: 0;
+        }
+
+        .navbar {
+            background-color: #000;
+            color: #fff;
             display: flex;
-            min-height: 100vh;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            text-align: center;
+            padding: 10px 20px;
+            height: 50px;
+        }
+
+        .navbar-logo {
+            width: 70px;
+            height: auto;
+            margin-right: auto;
+        }
+
+        .navbar-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-menu-item {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
         }
 
         .container {
             text-align: center;
+            margin-top: 100px;
         }
 
         h1 {
@@ -73,7 +98,7 @@
         }
 
         .cta-button {
-            background: linear-gradient(135deg, #6b2be0, #2bd9d9);
+            background: linear-gradient(135deg, #FFDEBB, #66B0F3);
             border: none;
             color: #fff;
             padding: 15px 30px;
@@ -120,11 +145,22 @@
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <img src="ai.png" alt="Flexibility-2 Logo" class="navbar-logo">
+        <div class="navbar-menu">
+            <a href="#" class="navbar-menu-item">Home</a>
+            <a href="#" class="navbar-menu-item">About</a>
+            <a href="#" class="navbar-menu-item">Services</a>
+            <a href="#" class="navbar-menu-item">Contact</a>
+        </div>
+    </div>
     <div class="container">
-        <img src="flex.png" alt="OpenAI Logo" class="logo">
+        <img src="flex.png" alt="Flexibility-2 Logo" class="logo">
         <h1>Flexibility•2</h1>
         <p>Flexibility-2 understands significantly more nuance and detail than our previous systems, allowing you to easily translate your ideas into exceptionally accurate solutions. Try out our most capable model and leverage your life with AI interface and helpful AGI.</p>
-        <button class="cta-button">Try Flexibility-2</button>
+        <a href="https://poe.com/Flexibility-2">
+    <button class="cta-button">Try Flexibility-2</button>
+</a>
         <div class="divider"></div>
         
         <div class="section" style="background-color: rgba(107, 43, 224, 0.5); padding: 20px;">
@@ -176,21 +212,21 @@
         </div>
 
         <div class="section">
-            <h2 class="section-heading">Plans</h2>
-            <div class="plan">
-                <div class="plan-box">
-                    <h3><i class="fas fa-star icon"></i>Basic Plan</h3>
-                    <p>Access to essential features</p>
-                    <p>Limited usage</p>
-                    <p>$9.99/month</p>
-                </div>
-                <div class="plan-box">
-                    <h3><i class="fas fa-gem icon"></i>Pro Plan</h3>
-                    <p>Access to advanced features</p>
-                    <p>Increased usage limits</p>
-                    <p>$19.99/month</p>
-                </div>
-                <div class="plan-box">
-                    <h3><i class="fas fa-crown icon"></i>Premium Plan</h3>
-                    <p>Access to all features</p>
-                    <p>Unlimited usage</p>
+        <h2 class="section-heading">Plans</h2>
+        <div class="plan">
+            <div class="plan-box">
+                <h3><i class="fas fa-star icon"></i>Basic Plan</h3>
+                <p>Access to essential features</p>
+                <p>Limited usage</p>
+                <p>$9.99/month</p>
+            </div>
+            <div class="plan-box">
+                <h3><i class="fas fa-gem icon"></i>Pro Plan</h3>
+                <p>Access to advanced features</p>
+                <p>Increased usage limits</p>
+                <p>$19.99/month</p>
+            </div>
+            <div class="plan-box">
+                <h3><i class="fas fa-crown icon"></i>Premium Plan</h3>
+                <p>Access to all features</p>
+                <p>Unlimited usage</p>
