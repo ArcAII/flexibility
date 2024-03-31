@@ -23,6 +23,7 @@
             align-items: center;
             padding: 10px 20px;
             height: 50px;
+            z-index: 999;
         }
 
         .navbar-logo {
@@ -142,11 +143,20 @@
         .plan-box .icon {
             margin-right: 10px;
         }
+        @media screen and (max-width: 600px) {
+        .section-heading {
+            font-size: 20px;
+        }
+
+        .section p {
+            font-size: 14px;
+        }
+    }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <img src="ai.png" alt="Flexibility-2 Logo" class="navbar-logo">
+        <img src="aii.png" alt="Flexibility-2 Logo" class="navbar-logo">
         <div class="navbar-menu">
             <a href="#" class="navbar-menu-item">Home</a>
             <a href="#" class="navbar-menu-item">About</a>
@@ -158,6 +168,7 @@
         <img src="flex.png" alt="Flexibility-2 Logo" class="logo">
         <h1>Flexibility•2</h1>
         <p>Flexibility-2 understands significantly more nuance and detail than our previous systems, allowing you to easily translate your ideas into exceptionally accurate solutions. Try out our most capable model and leverage your life with AI interface and helpful AGI.</p>
+      
         <a href="https://poe.com/Flexibility-2">
     <button class="cta-button">Try Flexibility-2</button>
 </a>
@@ -230,3 +241,12 @@
                 <h3><i class="fas fa-crown icon"></i>Premium Plan</h3>
                 <p>Access to all features</p>
                 <p>Unlimited usage</p>
+            </section>
+          
+        </div>
+        </div>
+          <div class="section">
+    <h2 class="section-heading">Available on Poe</h2>
+    <p>Our bot is currently available on Poe. Stay tuned as we'll soon release our own webpage for more updates and information.</p>
+    <img src="image.jpg" alt="Available on Poe" style="width: 400px; height: auto;">
+</div>
