@@ -1,252 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexibility-2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Include Font Awesome CSS -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif; /* Example font family */
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexiblity-2</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px;
+  }
+  
+  nav {
+    background-color: #111;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: auto;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 130px;
+  }
+  
+  .header h1 {
+    font-size: 79px;
+    margin-bottom: 20px;
+  }
 
-        .navbar {
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            height: 50px;
-            z-index: 999;
-        }
-
-        .navbar-logo {
-            width: 70px;
-            height: auto;
-            margin-right: auto;
-        }
-
-        .navbar-menu {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar-menu-item {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-        }
-
-        .container {
-            text-align: center;
-            margin-top: 100px;
-        }
-
-        h1 {
-            font-size: 100px; /* Increased font size */
-            margin-bottom: 40px; /* Increased margin */
-        }
-
-        .logo {
-            width: 100px;
-            height: auto;
-            margin-right: 20px; /* Increased margin */
-        }
-
-        .divider {
-            width: 100%;
-            height: 1px;
-            background-color: #fff;
-            margin: 100px 0; /* Increased margin */
-        }
-
-        .section {
-            margin-top: 80px; /* Added margin */
-            text-align: center;
-        }
-
-        .section-heading {
-            font-size: 36px;
-            margin-bottom: 40px;
-            color: #fff; /* Added text color */
-        }
-
-        .feature-box {
-            width: 300px;
-            height: 200px;
-            background-color: #444;
-            color: #fff;
-            margin: 20px;
-            padding: 20px;
-            display: inline-block;
-            vertical-align: top;
-            border-radius: 10px;
-        }
-
-        .feature-box h3 {
-            margin-top: 0;
-        }
-
-        .feature-box p {
-            margin-bottom: 0;
-        }
-
-        .cta-button {
-            background: linear-gradient(135deg, #FFDEBB, #66B0F3);
-            border: none;
-            color: #fff;
-            padding: 15px 30px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            margin-top: 80px; /* Increased margin */
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-        }
-
-        .plan {
-            display: flex;
-            justify-content: center;
-            margin-top: 80px;
-        }
-
-        .plan-box {
-            width: 300px;
-            background-color: #444;
-            color: #fff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            text-align: left;
-        }
-
-        .plan-box h3 {
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        .plan-box p {
-            margin-bottom: 20px;
-        }
-
-        .plan-box .icon {
-            margin-right: 10px;
-        }
-        @media screen and (max-width: 600px) {
-        .section-heading {
-            font-size: 20px;
-        }
-
-        .section p {
-            font-size: 14px;
-        }
-    }
-    </style>
+  .header img.large {
+    width: 90%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto 40px;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #444;
+    margin: 40px 0;
+  }
+  
+  .capabilities {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .capabilities h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .conversation {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .message {
+    max-width: 70%;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+</style>
 </head>
 <body>
-    <div class="navbar">
-        <img src="aii.png" alt="Flexibility-2 Logo" class="navbar-logo">
-        <div class="navbar-menu">
-            <a href="#" class="navbar-menu-item">Home</a>
-            <a href="#" class="navbar-menu-item">About</a>
-            <a href="#" class="navbar-menu-item">Services</a>
-            <a href="#" class="navbar-menu-item">Contact</a>
-        </div>
-    </div>
-    <div class="container">
-        <img src="flex.png" alt="Flexibility-2 Logo" class="logo">
-        <h1>Flexibility•2</h1>
-        <p>Flexibility-2 understands significantly more nuance and detail than our previous systems, allowing you to easily translate your ideas into exceptionally accurate solutions. Try out our most capable model and leverage your life with AI interface and helpful AGI.</p>
-      
-        <a href="https://poe.com/Flexibility-2">
-    <button class="cta-button">Try Flexibility-2</button>
-</a>
-        <div class="divider"></div>
-        
-        <div class="section" style="background-color: rgba(107, 43, 224, 0.5); padding: 20px;">
-            <h2 class="section-heading">Why Flexibility-2?</h2>
-            <div class="feature-box">
-                <h3>Advanced AI Capabilities</h3>
-                <p>Utilizes cutting-edge AI technology for superior performance.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Enhanced Understanding</h3>
-                <p>Grasps complex concepts and contexts with precision.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Seamless Integration</h3>
-                <p>Integrates seamlessly into existing workflows and systems.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Scalable Solutions</h3>
-                <p>Adapts to various use cases and scales effortlessly.</p>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-heading">Capabilities</h2>
-            <div class="feature-box">
-                <h3>Natural Language Understanding</h3>
-                <p>Understands complex human language with high accuracy.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Image Recognition</h3>
-                <p>Identifies objects, scenes, and patterns in images.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Decision Making</h3>
-                <p>Makes informed decisions based on gathered information.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Problem Solving</h3>
-                <p>Efficiently solves a wide range of complex problems.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Emotion Recognition</h3>
-                <p>Detects and interprets human emotions accurately.</p>
-            </div>
-            <div class="feature-box">
-                <h3>Autonomous Learning</h3>
-                <p>Continuously improves and learns autonomously.</p>
-            </div>
-        </div>
 
-        <div class="section">
-        <h2 class="section-heading">Plans</h2>
-        <div class="plan">
-            <div class="plan-box">
-                <h3><i class="fas fa-star icon"></i>Basic Plan</h3>
-                <p>Access to essential features</p>
-                <p>Limited usage</p>
-                <p>$9.99/month</p>
-            </div>
-            <div class="plan-box">
-                <h3><i class="fas fa-gem icon"></i>Pro Plan</h3>
-                <p>Access to advanced features</p>
-                <p>Increased usage limits</p>
-                <p>$19.99/month</p>
-            </div>
-            <div class="plan-box">
-                <h3><i class="fas fa-crown icon"></i>Premium Plan</h3>
-                <p>Access to all features</p>
-                <p>Unlimited usage</p>
-            </section>
-          
-        </div>
-        </div>
-          <div class="section">
-    <h2 class="section-heading">Available on Poe</h2>
-    <p>Our bot is currently available on Poe. Stay tuned as we'll soon release our own webpage for more updates and information.</p>
-    <img src="image.jpg" alt="Available on Poe" style="width: 400px; height: auto;">
+<nav>
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Features</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="header">
+    <h1>Flexiblity-2</h1>
+    <img src="A.jpg" alt="Abstract Art" class="large">
+    <p>Welcome to the next generation of AI.</p>
+    <a href="https://poe.com/Flexibility-2" class="btn">Try Flexibility-2</a>
+  </div>
+  
+  <div class="divider"></div>
+  
+  <div class="capabilities">
+    <h2>Capabilities</h2>
+    <div class="feature">
+      <h3>Audio Supported</h3>
+      <p>Get answers or assistance through audio input.</p>
+    </div>
+    <div class="feature">
+      <h3>Image Recognition</h3>
+      <p>Easily access information related to images.</p>
+    </div>
+    <div class="feature">
+      <h3>Note Taking</h3>
+      <p>Effortlessly write and store notes for future reference.</p>
+    </div>
+  </div>
+  
+  <div class="conversation">
+    <div class="avatar">
+      <img src="user.png" alt="User Avatar">
+    </div>
+    <div class="message">
+      <p>Hey AI, can you explain the concept of quantum computing in simple terms?</p>
+    </div>
+  </div>
+  
+  <div class="conversation">
+    <div class="message">
+      <p>Sure! Quantum computing is a type of computing that takes advantage of the strange ability of subatomic particles to exist in more than one state at any time.</p>
+      <p>This allows quantum computers to process a vast number of possibilities simultaneously, making them potentially much more powerful than classical computers for certain tasks.</p>
+    </div>
+    <div class="avatar">
+      <img src="ai.png" alt="AI Avatar">
+    </div>
+  </div>
+  
 </div>
+
+</body>
+</html>
