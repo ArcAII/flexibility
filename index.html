@@ -3,256 +3,290 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flexibility-2: Your new AI tutor</title>
-  <link rel="icon" href="favic.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-  <style>
-/* Whole CSS with improved style */
+<title>Introducing Flexiblitiy: Your New AI Tutor</title>
+<link rel="icon" href="fav.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron&display=swap" rel="stylesheet">
+<style>
+  body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #111;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: auto;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  .welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px; /* Adjusted padding */
+    color: #000;
+  }
 
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif; /* Change font to OpenAIs font */
-  margin: 0;
-  padding: 0;
-}
+  .welcome-content {
+    max-width: 50%;
+  }
+  
+  .welcome-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+  }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  padding-top: 80px;
-}
+  .welcome-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
 
-nav {
-  background-color: #111;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+  .hero-image {
+    max-width: 30%; /* Adjusted width */
+    height: auto;
+    border-radius: 10px; /* Added border radius for style */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+  }
 
-.logo {
-  margin-left: 20px;
-}
+  .btn {
+    display: inline-block;
+    background: linear-gradient(to right, #FBDBBC, #4890EF); /* Gradient from light red to dark red */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #ff9a9e, #fecfef); /* Gradient on hover */
+  }
 
-.logo img {
-  width: 40px;
-  height: auto;
-}
+  .divider {
+    border-bottom: 1px solid #000;
+    margin: 40px 0;
+  }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 20px;
-}
+  .research-section {
+    text-align: center;
+    margin-top: 80px;
+  }
 
-nav a:hover {
-  color: #ccc;
-}
+  .research-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
 
-.welcome-section {
-  background-image: url('gg.png');
-  background-size: cover;
-  background-position: center;
+  .research-image {
+    max-width: 80%; /* Adjusted width */
+    height: auto;
+    margin-bottom: 30px;
+    background-color: #fff; /* Set background color to white */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for style */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+
+  .research-content {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .ai-tutor-section {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .ai-tutor-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .ai-tutor-content {
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .ai-tutor-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+
+  .ai-tutor-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .ai-tutor-box p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .examples-section {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .examples-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .examples-chat {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  .chat-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+
+  .chat-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .chat-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .pricing-section {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  .plan-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+
+  .plan-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .plan-price {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #00cc00; /* Green color for price */
+  }
+
+  .plan-features {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .plan-box:last-child {
+    margin-right: 0;
+  }
+  
+  .contact-section {
   text-align: center;
-  padding: 100px 20px;
-  color: #fff;
-  height: 100vh;
+  margin-top: 80px;
 }
-.welcome-section h1 {
-  font-family: 'Orbitron', sans-serif; /* Change font family to Orbitron */
-  font-size: 100px; /* Adjust font size */
+
+.contact-section h2 {
+  font-size: 36px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect for h1 */
-  color: #fff;
 }
 
-.welcome-section h3 {
+.contact-section p {
+  font-size: 18px;
+}
+
+.follow {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.follow h3 {
+  color: #fff;
   font-size: 24px;
-  margin-top: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.btn {
+.follow-link {
   display: inline-block;
-  background: linear-gradient(to right, #FBDBBC, #4890EF);
-  color: #fff;
-  padding: 15px 30px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
 }
 
-.btn:hover {
-  background: linear-gradient(to right, #ff9a9e, #fecfef);
+.follow-link:hover {
+  background-color: #444;
 }
 
-.divider {
-  border-bottom: 1px solid #444;
-  margin: 40px 0;
-}
-
-.ai-tutor {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.ai-tutor h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.ai-tutor p {
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-.advantages {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-
-.advantages .box {
-  flex: 1;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
-  margin: 0 10px;
-}
-
-.advantages h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.advantages p {
-  font-size: 18px;
-}
-
-.conversation {
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.message {
-  max-width: 70%;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
-}
-
-.contact {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.capabilities {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.capabilities h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.feature {
-  background-color: #222;
-  padding: 40px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-}
-
-.feature h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.whats-new {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.news-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-
-.news-box {
-  flex: 1;
-  padding: 20px;
-  background-color: #10A37F;
-  border-radius: 10px;
-  margin: 0 10px;
-}
-
-.news-box h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.news-box p {
-  font-size: 18px;
-  color: #fff;
-}
-
-.upgrade-plan {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.upgrade-plan h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #fff;
-}
-
-.upgrade-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.upgrade-box {
-  flex: 1;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
-  margin: 0 10px;
-}
-
-.upgrade-box h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.upgrade-box p {
-  font-size: 18px;
-}
 </style>
 </head>
 <body>
@@ -263,116 +297,111 @@ nav a:hover {
   </div>
   <div class="nav-links">
     <a href="#welcome">Home</a>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
+    <a href="#research">Research</a>
+    <a href="#ai-tutor">AI Tutor</a>
+    <a href="#examples">Examples</a>
+    <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="container" id="welcome">
   <div class="welcome-section">
-    <h1>Flexibility </h1>
-    <h3> Your New AI tutor and companion! 🦾
-    </h3>
-    <a href="https://poe.com/Flexibility-2" class="btn">Try Flexiblity-2 🚀</a>
-  </div>
-  
-  <div class="divider"></div>
-  
-  <div class="ai-tutor" id="about">
-    <h2>AI Tutor 🚀</h2>
-    <p>Supercharge your learning with AI Tutor! 📚✨ Get personalized guidance and explanations, practice quizzes, and instant feedback to accelerate your progress. 🎓</p>
-    <div class="advantages">
-      <div class="box">
-        <h3>🎯 Personalized Learning</h3>
-        <p>Receive customized study plans and content tailored to your needs.</p>
-      </div>
-      <div class="box">
-        <h3>💡 Interactive Quizzes</h3>
-        <p>Engage in interactive quizzes and exercises to reinforce your understanding.</p>
-      </div>
-      <div class="box">
-        <h3>⚡ Instant Feedback</h3>
-        <p>Get immediate feedback on your performance to track your progress effectively.</p>
-      </div>
+    <div class="welcome-content">
+      <h1>Introducing Flexibility</h1>
+      <p>Flexibility-2 revolutionizes the way you learn. Our AI-powered tutor offers personalized learning experiences tailored to your needs and preferences. Try Flexibility-2 now and take your learning to the next level!</p>
+      <a href="https://poe.com/Flexibility-2" class="btn">Try Flexibility-2 🚀</a>
     </div>
-  </div>
-  
-  <div class="divider"></div>
-  
-  <div class="conversation" id="features">
-    <div class="avatar">
-      <img src="user.png" alt="User Avatar">
-    </div>
-    <div class="message">
-      <p>Hey AI, can you explain the concept of quantum computing in simple terms?</p>
-    </div>
-  </div>
-  
-  <div class="conversation">
-    <div class="message">
-      <p>Sure! Quantum computing is a type of computing that takes advantage of the strange ability of subatomic particles to exist in more than one state at any time.</p>
-      <p>This allows quantum computers to process a vast number of possibilities simultaneously, making them potentially much more powerful than classical computers for certain tasks.</p>
-    </div>
-    <div class="avatar">
-      <img src="ai.png" alt="AI Avatar">
-    </div>
-  </div>
-  
-  <div class="capabilities" id="features">
-    <h2>Capabilities 🛠️</h2>
-    <div class="feature">
-      <h3>Audio Supported 🔊</h3>
-      <p>Listen to answers or assistance through audio input.</p>
-    </div>
-    <div class="feature">
-      <h3>Image Recognition 🖼️</h3>
-      <p>Easily access information related to images.</p>
-    </div>
-    <div class="feature">
-      <h3>Note Taking 📝</h3>
-      <p>Effortlessly write and store notes for future reference.</p>
-    </div>
-  </div>
-  
-  <div class="contact" id="contact">
-    <h2>Contact Us 📧</h2>
-    <p>For any inquiries, please email us at <a href="mailto:veebharani2.com">veebharani2.com</a>.</p>
-  </div>
-  
-  <!-- What's New section -->
-  <div class="whats-new">
-    <h2>What is New 🚀</h2>
-    <div class="news-container">
-      <div class="news-box">
-        <h3>New Dashboard Coming Soon!</h3>
-        <p>Exciting news! A new dashboard with enhanced features and usability will be launched soon. Stay tuned for updates!</p>
-      </div>
-      <div class="news-box">
-        <h3>Homepage Update!</h3>
-        <p>We have updated our homepage with a fresh new look and improved navigation. Check it out now!</p>
-      </div>
-      <div class="news-box">
-        <h3>GPT-4 Integration Coming Soon!</h3>
-        <p>Get ready for an advanced learning experience! GPT-4 integration is on the way, bringing even more capabilities to Flexibility-2!</p>
-      </div>
-    </div>
-    <div class="upgrade-plan">
-  <h2><img src="star.png" alt="Upgrade Plan" style="width: 40px; height: 40px; margin-right: 10px;">Upgrade Plan</h2>
-  <div class="upgrade-container">
-    <div class="upgrade-box">
-      <h3>Enhanced AI with POE</h3>
-      <p>Upgrade your plan to unlock the power of POE (Pattern of Excellence) technology. POE allows our AI to analyze patterns in your learning behavior, leading to more personalized and effective study recommendations. Best of all, it's included for free!</p>
-    </div>
-    <div class="upgrade-box">
-      <h3>GPT-4 Integration</h3>
-      <p>With an upgraded plan, you'll gain access to advanced features powered by GPT-4. Enjoy enhanced credits for using prompts, expanded capabilities, and a seamless integration with the latest AI technology. Upgrade now and take your learning to the next level!</p>
+    <div class="hero-image">
+      <img src="hero_image.jpg" alt="Hero Image">
     </div>
   </div>
 </div>
 
+<div class="divider"></div>
+
+<div class="research-section" id="research">
+  <h2>Research</h2>
+  <div class="research-image">
+    <img src="research_image.jpg" alt="Research Image">
+  </div>
+  <div class="research-content">
+    <p>Flexibility-2 utilizes the power of Claude 3 sonnet to understand students prompts significantly. We are planning to launch our own Language Learning Model (LLM) and incorporate the latest advancements in AI, including GPT-4 and Hugging Face models, to enhance the learning experience even further. Our research aims to push the boundaries of AI-powered education and provide students with cutting-edge learning tools.</p>
   </div>
 </div>
+
+<div class="ai-tutor-section" id="ai-tutor">
+  <h2>AI Tutor</h2>
+  <div class="ai-tutor-content">
+    <div class="ai-tutor-box">
+      <h3>📚 Personalized Learning</h3>
+      <p>Receive customized study plans and content tailored to your needs.</p>
+    </div>
+    <div class="ai-tutor-box">
+      <h3>💡 Interactive Quizzes</h3>
+      <p>Engage in interactive quizzes and exercises to reinforce your understanding.</p>
+    </div>
+    <div class="ai-tutor-box">
+      <h3>👩‍🏫 Instant Feedback</h3>
+      <p>Get immediate feedback on your performance to track your progress effectively.</p>
+    </div>
+  </div>
+</div>
+
+<div class="examples-section" id="examples">
+  <h2>Examples</h2>
+  <div class="examples-chat">
+    <div class="chat-box">
+      <img src="user.png" alt="User Avatar">
+      <p class="chat-text">User: What is quantum computing?</p>
+      <img src="ai.png" alt="AI Avatar">
+      <p class="chat-text">AI: Quantum computing is a type of computing that harnesses the power of quantum mechanics to process information. It has the potential to solve complex problems much faster than traditional computers.</p>
+    </div>
+  </div>
+</div>
+<div class="pricing-section" id="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing-plans">
+    <div class="plan-box">
+      <h3>Free Plan</h3>
+      <p class="plan-price">$0</p>
+      <ul class="plan-features">
+        <li>✔️ Includes free messages and basic features</li>
+        <li>✔️ Access to limited study materials</li>
+        <li>✔️ Basic quiz and exercise options</li>
+      </ul>
+    </div>
+    <div class="plan-box">
+      <h3>Paid Plan</h3>
+      <p class="plan-price">$14.99</p>
+      <ul class="plan-features">
+        <li>✔️ Includes 10 messages per month and advanced features</li>
+        <li>✔️ Access to expanded study materials library</li>
+        <li>✔️ Advanced quiz and exercise options with progress tracking</li>
+        <li>✔️ Priority customer support</li>
+      </ul>
+    </div>
+    <div class="plan-box">
+      <h3>Team Plan</h3>
+      <p class="plan-price">Custom</p>
+      <ul class="plan-features">
+        <li>✔️ Access to our dashboard and GPT-4 models</li>
+        <li>✔️ Unlimited messages and priority support</li>
+        <li>✔️ Customized learning plans for teams</li>
+        <li>✔️ Dedicated account manager</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <p>For any inquiries, please email us at <a href="mailto:architkumar41009@gmail.com">contact@flexibility.com</a>.</p>
+  <div class="follow">
+    <h3>QubeAI</h3>
+    <a href="https://twitter.com/RaniVeebha" class="follow-link">Follow on X our developer @Apollo</a>
+  </div>
+</div>
+
 
 </body>
 </html>
