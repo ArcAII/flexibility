@@ -207,6 +207,31 @@
       margin-right: 5px;
     }
   
+  
+  
+    
+.partners-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  /* Style for the partner logos */
+  .partner-logo {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin: 20px; /* Adjust the spacing between logos */
+    display: inline-block;
+    animation: floatAnimation 3s infinite ease-in-out; /* Floating animation */
+  }
+  
+  /* Keyframes for the floating animation */
+  @keyframes floatAnimation {
+    0% { transform: translateY(0); } /* Start from initial position */
+    50% { transform: translateY(-10px); } /* Float up */
+    100% { transform: translateY(0); } /* Return to initial position */
+  }
+  
   </style>
 </head>
 <body>
@@ -231,8 +256,22 @@
   <div class="image-section">
     <img src="your-image.png" alt="Image">
   </div>
- <div id="features" class="new-section">
+  
+     <section class="partners-section">
+  <h2></h2>
+  <div class="partners-container">
+    <img src="openai.png" alt="Partner 1" class="partner-logo">
+    <img src="anthropic.png" alt="Partner 2" class="partner-logo">
+    <img src="reka.png" alt="Partner 3" class="partner-logo">
+    <img src="google.png" alt="Partner 4" class="partner-logo">
+  </div>
+</section>
+  
+  
+   <div id="features" class="new-section">
 
+     
+    
     <h1>Writes, Teaches, edits and explores creativity with you</h1>
     <img src="image-header.png" alt="Image Header">
        <h1>Easily and Freely available at POE with Claude Sonnet</h1>
