@@ -8,236 +8,102 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
   <style>
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background-color: #000;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-     .navbar {
-      position: fixed; /* Fixed position */
-      top: 0; /* Stick to the top */
-      left: 0;
-      right: 0;
-      z-index: 1000; /* Ensure it above other content */
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    }
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    .welcome-section {
-      text-align: center;
-      margin-top: 100px;
-    }
-    .welcome-section h1 {
-      font-size: 4em; /* Increased font size */
-      margin-bottom: 20px; /* Increased margin */
-      color: #fff; /* Yellow color */
-    }
-    .welcome-section h3 {
-      margin-top: 10px;
-      margin-bottom: 30px;
-    }
-    .start-button {
-      font-size: 1.2em;
-      padding: 15px 30px;
-      border-radius: 50px;
-      border: none;
-      background-color: #fff;
-      color: #000;
-      cursor: pointer;
-    }
-    .image-section {
-      margin-top: 50px;
-    }
-    .image-section img {
-      width: 100%;
-      border-radius: 20px;
-    }
-    .new-section {
-      background-color: #000;
-      padding: 50px;
-    }
-    .new-section h1 {
-      font-size: 3em; /* Increased font size */
-      color: #fff; /* Yellow color */
-      margin-bottom: 20px; /* Increased margin */
-    }
-    .new-section img {
-      width: 100%;
-      border-radius: 20px;
-      margin-bottom: 20px;
-    }
-    .navbar .logo img {
-      max-width: 50px;
-    }
-    @media screen and (max-width: 600px) {
-      .navbar {
-        justify-content: center;
-      }
-    }
-  
-  .discord-section {
+body {
+  font-family: 'DM Sans', sans-serif;
   background-color: #000;
   color: #fff;
-  padding: 50px;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.discord-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.discord-section p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-.discord-image {
-  width: 80%;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-  
-  .join-button {
-  font-size: 1.2em;
-  padding: 15px 30px;
-  border-radius: 50px;
-  border: none;
-  background-color: #fff;
-  color: #000;
-  cursor: pointer;
-}
-.pricing-section {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.plan {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
-  justify-content: space-around;
-}
-
-.box {
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #222; /* Very blackish */
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.welcome-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px; /* Decreased margin */
+  color: #fff;
+  font-weight: 300; /* Set font weight to lighter than normal */
+}
+
+.welcome-section h3 {
+  margin-top: 10px;
+  margin-bottom: 20px; /* Decreased margin */
 }
 
 .start-button {
-  font-size: 1.2em;
-  padding: 15px 30px;
+  font-size: 1em; /* Decreased font size */
+  padding: 12px 24px; /* Adjusted padding */
   border-radius: 50px;
   border: none;
   background-color: #fff;
   color: #000;
   cursor: pointer;
-  margin-top: 20px;
-}
-.flexibility-section {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.flexibility-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.box {
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #111111; /* Very blackish */
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.grey {
-  background-color: #111111;
 }
 
 .image-section {
-  margin-top: 20px;
+  margin-top: 30px; /* Decreased margin */
 }
 
 .image-section img {
   width: 100%;
   border-radius: 10px;
 }
-  
-  
-  .contact-section {
-      text-align: center;
-      margin-top: 50px;
-    }
-    .contact-link {
-      display: block;
-      margin-bottom: 20px;
-      font-size: 18px;
-      text-decoration: none;
-      color: white;
-    }
-    .contact-link:hover {
-      color: gray;
-    }
-    .gmail-icon {
-      width: 16px;
-      height: 16px;
-      margin-right: 5px;
-    }
-  .icon {
-      width: 16px;
-      height: 16px;
-      margin-right: 5px;
-    }
-  
-  
-  
-    
-.partners-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #000;
+
+.new-section {
+  background-color: #000;
+  padding: 30px; /* Decreased padding */
+}
+
+.new-section h1 {
+  font-size: 2.5em; /* Decreased font size */
+  color: #fff;
+  margin-bottom: 10px; /* Decreased margin */
+}
+
+.new-section img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Decreased margin */
+}
+
+.navbar .logo img {
+  max-width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: center;
   }
-  
-  /* Style for the partner logos */
-  .partner-logo {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
-    margin: 20px; /* Adjust the spacing between logos */
-    display: inline-block;
-    animation: floatAnimation 3s infinite ease-in-out; /* Floating animation */
-  }
-  
-  /* Keyframes for the floating animation */
-  @keyframes floatAnimation {
-    0% { transform: translateY(0); } /* Start from initial position */
-    50% { transform: translateY(-10px); } /* Float up */
-    100% { transform: translateY(0); } /* Return to initial position */
-  }
+}
   
   </style>
 </head>
 <body>
   <header class="navbar">
     <div class="logo">
-      <img src="aii.png" alt="ChatGPT Logo">
+      <img src="aiii.png" alt="ChatGPT Logo">
     </div>
     <nav>
        <a href="#home">Home</a>
@@ -249,23 +115,16 @@
   
  <div id="home" class="welcome-section">
     <p>flexibility</p>
-    <h1>Get Solutions. Ignite Creativity. Achieve Flexibility.</h1>
+    <h1>An always-improving superassistants for every member of your team</h1>
     <h3>Free to use in Discord. Easy to try. Just ask and flexibility can help with writing, learning, coding and more.</h3>
    <button class="start-button" onclick="window.location.href = '   https://discord.com/invite/kcg97WVz';">Join Beta</button>
+   <button class="start-button" onclick="window.location.href = '   https://discord.com/channels/1193923300255088640/1237696492555206677';">Access GPT-4</button>
   </div>
   <div class="image-section">
     <img src="your-image.png" alt="Image">
   </div>
   
-     <section class="partners-section">
-  <h2></h2>
-  <div class="partners-container">
-    <img src="openai.png" alt="Partner 1" class="partner-logo">
-    <img src="anthropic.png" alt="Partner 2" class="partner-logo">
-    <img src="reka.png" alt="Partner 3" class="partner-logo">
-    <img src="google.png" alt="Partner 4" class="partner-logo">
-  </div>
-</section>
+     
   
   <p>*We are curently using midjourney model it is a discord bot powered by GPT4*</p>
    <div id="features" class="new-section">
@@ -273,7 +132,7 @@
      
     
     <h1>Writes, Teaches, edits and explores creativity with you</h1>
-    <img src="image-header.png" alt="Image Header">
+    <img src="1.webp" alt="Image Header">
        <h1>Easily and Freely available at POE with Claude Sonnet</h1>
     <img src="image-header1.png" alt="Image Header">
     
@@ -281,7 +140,7 @@
     <img src="image-header2.png" alt="Image Header">
     
     <h1>Type, talk, and Ask it anything</h1>
-    <img src="image-header3.png" alt="Image Header">
+    <img src="6.jpeg" alt="Image Header">
   </div>
 </section>
   <div class="discord-section">
@@ -293,7 +152,7 @@
 </div>
  
 <div id="pricing" class="pricing-section">
-  <h1>Get started with ChatGPT today</h1>
+  <h1>Get started with All AI models today</h1>
   
 <div class="pricing-section">
   <div class="plan">
@@ -347,4 +206,4 @@ We would love to hear from you!
 </div>
   
 </body>
-</html>
+</html> 
