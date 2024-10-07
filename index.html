@@ -129,17 +129,20 @@ p {
 </div>
 <style>
     #custom-background {
-        background-image: url('https://wallpaper.forfun.com/fetch/78/7804edeeb25a58781c148b068f47760c.jpeg');
-        background-size: cover;         /* Ensures the image covers the whole div */
-        background-position: center;    /* Centers the image */
-        background-repeat: no-repeat;   /* Prevents image from repeating */
-        height: 100vh;                   /* Adjusted height (e.g., 60% of viewport) */
-        width: 100vw;                   /* Full viewport width */
-        display: flex;                  /* Ensures inner elements don’t affect height */
-        align-items: center;            /* Vertically centers content inside */
-        justify-content: center;        /* Horizontally centers content inside */
-        padding: 0;                     /* Removes extra padding */
-        margin: 0;                      /* Removes extra margin */
+        background-image: url('arcx.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        color: white;
+       
+        text-align: center;
       }
       
       .rewatch-button {
@@ -171,32 +174,49 @@ p {
     
     
     #logo img {
-        width: 15%; /* Adjust as needed */
-        max-width: 150px;
+        width: 5%; /* Adjust as needed */
+        max-width: 100px;
         height: auto;
         margin: 0 auto;
         display: block;
     }
     @media (max-width: 960px) {
-        #logo img {
-            width: 20%;
-            padding-top: 80px
+        #logo {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          width: 150px;
+          margin-top: -5px;
+          transform: translate(-50%, -50%);
         }
-    }
-    @media (max-width: 768px) {
+      }
+      
+      @media (max-width: 960px) {
         #logo img {
-            width: 20%;
-            padding-top: 80px
+          width: 20%;
+          padding-top: 80px;
+          display: block;
+          margin: 0 auto;
         }
-    }
-    
-    @media (max-width: 480px) {
+      }
+      
+      @media (max-width: 768px) {
         #logo img {
-            width: 25%;
-            padding-top: 80px
+          width: 20%;
+          padding-top: 80px;
+          display: block;
+          margin: 0 auto;
         }
-    }
-    
+      }
+      
+      @media (max-width: 480px) {
+        #logo img {
+          width: 25%;
+          padding-top: 80px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
     
 /* CSS */
 .below-wave-image {
@@ -236,15 +256,13 @@ p {
               </div>
               
               
-             <h1>What is ARCX?</h1>
-            <div class="section-inner feature">
-               
-                <img src="wave.png"></img>
-                <h1>Our Newest model ACRX</h1>
-                <img src="1.png" alt="Image Below Wave" class="below-wave-image">
-               
-            </div>
-
+             
+           
+            <h1>What is ARCX?</h1>
+            <img src="wave.png"></img>
+            <h1>Our Newest model ACRX</h1>
+            <img src="1.png" alt="Image Below Wave" class="below-wave-image">
+           
             <h1>Listen to your conversations!</h1>
             <img src="A New Beginning (3).png" alt="Image Below Wave" class="below-wave-image">
             <h1>Ask Till Infinity</h1>
