@@ -129,7 +129,7 @@ p {
 </div>
 <style>
     #custom-background {
-        background-image: url('arcx.jpg');
+        background-image: url('4.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -237,7 +237,90 @@ p {
     }
   }
   
-      
+
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+.card {
+    background-color: #111111;
+    border-radius: 12px;
+    padding: 2rem;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+}
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.card-subtitle {
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+.price-period {
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-free {
+    background-color: #333;
+    color: #fff;
+}
+.btn-free:hover {
+    background-color: #444;
+}
+.btn-pro {
+    background-color: #00ffff;
+    color: #000;
+}
+.btn-pro:hover {
+    background-color: #00cccc;
+}
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.feature-icon {
+    color: #00ffff;
+    margin-right: 0.5rem;
+}
+.pro-card {
+    background: linear-gradient(145deg, #111111, #222222);
+    border: 1px solid #333;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
     
 </style>
 
@@ -265,13 +348,73 @@ p {
            
             <h1>Listen to your conversations!</h1>
             <img src="A New Beginning (3).png" alt="Image Below Wave" class="below-wave-image">
-            <h1>Ask Till Infinity</h1>
+            <h1>Ask Until Infinity</h1>
             <img src="8.png" alt="Image Below Wave" class="below-wave-image">
-            <h1>Learn Till Infinity</h1>
+            <h1>Learn Until Infinity</h1>
             <img src="9.png" alt="Image Below Wave" class="below-wave-image">
-            <h1>Human like and fast responce with thinking</h1>
+            <h1>Fast, human-like response with thinking.</h1>
             <img src="10.png" alt="Image Below Wave" class="below-wave-image">
-             
+      
+        <div class="container">
+            <div class="card">
+                <h1>Standard</h1>
+                <h4>Start for free, no credit card needed.</h4>
+          
+                <h2>Forever</h2>
+                <button class="btn btn-free">Continue with Free</button>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Unlimited Quick searches
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        5 Pro Searches per day
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Standard Perplexity AI Model optimized for speed and quality
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Create a profile to personalize your answers
+                    </li>
+                </ul>
+            </div>
+            <div class="card pro-card">
+                <h1>Premium</h1>
+                <h4>Unlock the full capabilities of Perplexity and enjoy new perks as they are added.</h4>
+                <div class="price">$16</div>
+                <div class="price-period">Monthly</div>
+                <button class="btn btn-pro">Continue with Pro</button>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Unlimited Quick searches
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        300+ Pro searches per day
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Select your preferred AI Model. Choose from GPT-4o, Claude-3, Sonar Large (LLama 3.1), and more
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Upload and analyze unlimited files
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Visualize answers using Playground AI, DALL-E, SDXL, and more
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        Get $5/month in API credits
+                    </li>
+                </ul>
+            </div>
+        </div>
           </div>
         
         </div>
